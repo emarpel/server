@@ -48,7 +48,7 @@ const testDatabaseConnection = async () => {
 };
 
 // Iniciando o servidor
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3999;
 app.listen(PORT, async () => {
   console.log(`Servidor rodando na porta ${PORT}`);
   await testDatabaseConnection(); // Testa a conexão com o banco de dados ao iniciar
