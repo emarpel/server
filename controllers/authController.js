@@ -40,7 +40,7 @@ const login = async (req, res) => {
     // Gerando o token JWT
     const token = jwt.encode(payload, config.JWT_SECRET_KEY);
 
-    return res.status(200).send({ message: 'Login realizado com sucesso.', jwt: token });
+    return res.status(200).send({ message: 'Login realizado com sucesso.', token: token });
   } catch (err) {
     console.error(err);
     return res.status(500).send({ message: 'Erro ao acessar o banco de dados.' });
