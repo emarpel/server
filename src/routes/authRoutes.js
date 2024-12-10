@@ -2,7 +2,7 @@
 const express = require('express');
 const authController = require('../controllers/authController');
 const sendRecoveryEmail = require('../controllers/sendRecoveryEmail');
-const verifyToken = require('../middleware/authMiddleware');
+const verifyToken = require('../middleware/verifyToken');
 const router = express.Router();
 
 // Rota de login

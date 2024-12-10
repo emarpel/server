@@ -16,4 +16,5 @@ model Users {
   userPassword String
   userPasswordOriginal String
   userPermission String
+  @@map("users") // Mapeia o modelo para a tabela "users"
 }
